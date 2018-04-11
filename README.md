@@ -14,11 +14,11 @@ python3 -m venv search-es && source search-es/bin/activate
 ```
 3. Install dependencies
 ```
-pip install -r requirementx.txt
+cd search-es && pip install -r requirementx.txt
 ```
 4. Start a local ES inside Docker
 ```
-docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.2.3
+docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.2.3
 ```
 5. Run the script
 ```
