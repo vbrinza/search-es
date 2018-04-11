@@ -20,7 +20,7 @@ cd search-es && pip install -r requirementx.txt
 ```
 docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.2.3
 ```
-5. Run the script
+5. Wait few seconds then run the script
 ```
 python search_es.py
 ```
